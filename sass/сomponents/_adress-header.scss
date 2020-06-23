@@ -1,0 +1,31 @@
+.address {
+  margin-left: auto;
+  & .link {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: $timing-function;
+  }
+  & .link-icon {
+    width: 16px;
+    height: 11px;
+    fill: $primary-text-color;
+    transition: $timing-function;
+  }
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: $accent-color;
+}
+
+.address .link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address .link-icon:hover,
+.address .link-icon:focus {
+  fill: $accent-color;
+}

@@ -1,0 +1,9 @@
+footer {
+  background: #2f303a;
+  padding-top: 56px;
+  &-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
