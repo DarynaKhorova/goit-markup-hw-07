@@ -39,6 +39,8 @@
   & .hero-button {
     display: inline-block;
     color: $title-text-color-second;
+    cursor: pointer;
+    border: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;

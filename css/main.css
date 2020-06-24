@@ -244,6 +244,8 @@ img {
 .hero .hero-button {
   display: inline-block;
   color: #ffffff;
+  cursor: pointer;
+  border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -254,11 +256,7 @@ img {
 }
 
 .form {
-  position: absolute;
-  -webkit-transform: translate(75%, -221px);
-          transform: translate(75%, -221px);
   padding: 40px;
-  width: 528px;
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -280,6 +278,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -323,8 +323,33 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: var(--title-text-color-second--);
+  border-radius: 4px;
+}
+
 .comment-input {
   height: 120px;
+  resize: none;
 }
 
 .comment-label {
@@ -409,6 +434,11 @@ img {
 .contract {
   color: #2196f3;
   text-decoration: underline;
+}
+
+.icon-close {
+  width: 24px;
+  height: 24px;
 }
 
 .feature-list {
@@ -743,6 +773,7 @@ footer {
   margin-right: 12px;
   padding-left: 16px;
   width: 358px;
+  color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -755,6 +786,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   padding: 10px 28px;
+  cursor: pointer;
   width: 200px;
   height: 50px;
   font-weight: bold;
