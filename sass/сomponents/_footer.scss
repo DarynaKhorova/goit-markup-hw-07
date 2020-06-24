@@ -1,9 +1,9 @@
 footer {
-  background: #2f303a;
+  background: $footer-color;
   padding-top: 56px;
-  &-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
+}
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
